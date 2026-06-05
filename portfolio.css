@@ -1,288 +1,288 @@
 /* ESTILO GERAL */
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 body {
-    background-color: #000000;
-    height: 100vh;
+  background-color: #000000;
+  height: 100vh;
 }
 
 .interface {
-    max-width: 1280px;
-    margin: 0 auto;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .contato-madu a button {
-    cursor: pointer;
-    font-weight: 600;
-    padding: 10px 40px;
-    font-size: 18px;
-    color: #fff;
-    background-color: #4011da;
-    border: 0;
-    border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 10px 40px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #4011da;
+  border: 0;
+  border-radius: 30px;
 }
 
 h2.titulo {
-    color: #fff;
-    font-size: 38px;
-    text-align: center;
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
 }
 
 h2.titulo span {
-    color: #4011da;
+  color: #4011da;
 }
 
 /* ESTILO CABEÇALHO */
 header {
-    padding: 40px 4%;
+  padding: 40px 4%;
 }
 
 header > .interface {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header a {
-    color: #9CA3AF;
-    text-decoration: none;
-    display: inline-block;
-    transition: .2s;
+  color: #9ca3af;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
 }
 
 header a:hover {
-    color: #945eff;
-    transform: scale(1.05);
+  color: #945eff;
+  transform: scale(1.05);
 }
 
 header nav ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .menu-desktop ul li {
-    display: inline-block;
-    padding: 0 40px;
+  display: inline-block;
+  padding: 0 40px;
 }
 
 .contato-madu a button:hover {
-    box-shadow: 0px 0px 8px #8141ff;
-    transform: scale(1.05);
-    transition: .2s;
+  box-shadow: 0px 0px 8px #8141ff;
+  transform: scale(1.05);
+  transition: 0.2s;
 }
 
 /* ESTILO DO TOPO DO SITE */
 section.topo-do-site {
-    padding: 40px 4%;
+  padding: 40px 4%;
 }
 
 section.topo-do-site .flex {
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
 }
 
 .topo-do-site h1 {
-    color: #fff;
-    font-size: 42px;
-    line-height: 40px;
+  color: #fff;
+  font-size: 42px;
+  line-height: 40px;
 }
 
 .topo-do-site .txt-topo-site h1 span {
-    color: #4011da;
+  color: #4011da;
 }
 
 .topo-do-site .txt-topo-site p {
-    color: #fff;
-    margin: 40px 0px;
+  color: #fff;
+  margin: 40px 0px;
 }
 
 .topo-do-site .img-topo-site {
-    position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate;
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
 }
 
 @keyframes flutuar {
-    0% {
-        top: 0;
-    }
-    100% {
-        top: 30px;
-    }
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 30px;
+  }
 }
 
 /* ESTILO DAS ESPECIALIDADES */
 section.especialidades {
-    padding: 40px 4%;
+  padding: 40px 4%;
 }
 
 .especialidades .flex {
-    gap: 60px;
+  gap: 60px;
 }
 
 .especialidades .especialidades-box {
-    color: #fff;
-    padding: 40px;
-    margin-top: 45px;
-    border-radius: 20px;
-    transition: .2s;
+  color: #fff;
+  padding: 40px;
+  margin-top: 45px;
+  border-radius: 20px;
+  transition: 0.2s;
 }
 
 .especialidades .especialidades-box i {
-    font-size: 70px;
-    color: #ffffff;
+  font-size: 70px;
+  color: #ffffff;
 }
 
 .especialidades .especialidades-box h3 {
-    font-size: 28px;
-    margin: 15px 0px;
+  font-size: 28px;
+  margin: 15px 0px;
 }
 
 .especialidades .especialidades-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 8px #ffffff8e;
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #ffffff8e;
 }
 
 /* ESTILO SOBRE */
 section.sobre {
-    padding: 40px 4%;
+  padding: 40px 4%;
 }
 
 section.sobre .flex {
-    align-items: center;
-    gap: 60px;
+  align-items: center;
+  gap: 60px;
 }
 
 .sobre .txt-sobre {
-    color: #fff;
+  color: #fff;
 }
 
 .sobre .txt-sobre h2 {
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 30px;
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
 }
 
 .sobre .txt-sobre h2 span {
-    color: #4011da;
-    display: block;
+  color: #4011da;
+  display: block;
 }
 
 .sobre .txt-sobre p {
-    margin: 30px 0;
-    text-align: justify;
+  margin: 30px 0;
+  text-align: justify;
 }
 
 .sobre .txt-sobre .social-madu button {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    border: 0;
-    background-color: #945eff;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 0;
+  background-color: #945eff;
 }
 
 .social-madu a button:hover {
-    transform: scale(1.1);
-    transition: .2s;
-    box-shadow: 0 0 8px #6350a3;
+  transform: scale(1.1);
+  transition: 0.2s;
+  box-shadow: 0 0 8px #6350a3;
 }
 
 /* ESTILO DO PORTFÓLIO */
 section.portfolio {
-    padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
+  padding: 80px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1d;
 }
 
 section.portfolio .flex {
-    justify-content: space-around;
-    margin-top: 60px;
+  justify-content: space-around;
+  margin-top: 60px;
 }
 
 .img-port {
-    width: 360px;
-    height: 460px;
-    background-image: url("FOTOGRAFIA.png");
-    background-size: cover;
-    background-position: 100% 0%;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    border-radius: 40px;
-    position: relative;
-    background-color: #4011da;
+  width: 360px;
+  height: 460px;
+  background-image: url("FOTOGRAFIA.png");
+  background-size: cover;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border-radius: 40px;
+  position: relative;
+  background-color: #4011da;
 }
 
 .img-port2 {
-    width: 360px;
-    height: 460px;
-    background-image: url("Coleta.png");
-    background-size: cover;
-    background-position: 100% 0%;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    border-radius: 40px;
-    position: relative;
-    background-color: #4011da;
+  width: 360px;
+  height: 460px;
+  background-image: url("Coleta.png");
+  background-size: cover;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border-radius: 40px;
+  position: relative;
+  background-color: #4011da;
 }
 
 .img-port3 {
-    width: 360px;
-    height: 460px;
-    background-image: url("nsa.png");
-    background-size: cover;
-    background-position: 100% 0%;
-    cursor: pointer;
-    border-radius: 40px;
-    position: relative;
-    background-color: #4011da;
+  width: 360px;
+  height: 460px;
+  background-image: url("nsa.png");
+  background-size: cover;
+  background-position: 100% 0%;
+  cursor: pointer;
+  border-radius: 40px;
+  position: relative;
+  background-color: #4011da;
 }
 
 .img-port:hover {
-    background-position: 100% 100%;
-    transition: 4s;
+  background-position: 100% 100%;
+  transition: 4s;
 }
 
 .img-port2:hover {
-    background-position: 100% 100%;
-    transition: 4s;
+  background-position: 100% 100%;
+  transition: 4s;
 }
 
 .img-port3:hover {
-    background-position: 100% 100%;
-    transition: 4s;
+  background-position: 100% 100%;
+  transition: 4s;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000000b8;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    font-weight: 600;
-    color: #fff;
-    opacity: 0;
-    text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000b8;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  opacity: 0;
+  text-align: center;
 }
 
 .overlay:hover {
-    opacity: 1;
-    transition: .5s;
+  opacity: 1;
+  transition: 0.5s;
 }
 
 .img-port2 .overlay p {
-    margin-left: 5px;
-    margin-right: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
