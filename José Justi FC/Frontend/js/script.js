@@ -311,11 +311,73 @@
   }
 
   // ===== INICIALIZAÇÃO =====
+  function pesquisar() {
+    const texto = searchInput.value.toLowerCase().trim();
+
+    const resultados = {
+      historia: "historia",
+      história: "historia",
+
+      titulo: "titulos",
+      títulos: "titulos",
+      titulos: "titulos",
+
+      identidade: "identidade",
+
+      diretoria: "diretoria",
+      presidente: "diretoria",
+
+      contato: "contato",
+      contatos: "contatos",
+
+      ouvidoria: "ouvidoria",
+
+      futebol: "futebol",
+
+      modalidades: "modalidades",
+
+      ingressos: "ingressos",
+      planos: "ingressos",
+
+      transparencia: "transparencia",
+      transparência: "transparencia",
+
+      negocios: "negocios",
+      negócios: "negocios",
+
+      imprensa: "imprensa",
+
+      noticias: "noticias",
+      notícias: "noticias",
+
+      jogos: "proximos-jogos",
+      próximos: "proximos-jogos",
+    };
+
+    for (let palavra in resultados) {
+      if (texto.includes(palavra)) {
+        loadContent(resultados[palavra]);
+
+        searchInput.value = "";
+
+        return;
+      }
+    }
+
+    alert("Nenhum resultado encontrado.");
+  }
   function init() {
     const hash = window.location.hash.replace("#", "");
     loadContent(hash || "home");
 
     navLinks.forEach((link) => link.addEventListener("click", navigate));
+    searchBtn.addEventListener("click", pesquisar);
+
+    searchInput.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        pesquisar();
+      }
+    });
     hamburger.addEventListener("click", toggleMobileMenu);
     dropdownToggles.forEach((toggle) =>
       toggle.addEventListener("click", toggleDropdown),

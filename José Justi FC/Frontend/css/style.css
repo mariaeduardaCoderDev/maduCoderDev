@@ -591,3 +591,40 @@
         gap: 0.2rem 0.5rem;
     }
     }
+.header__search{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.header__search input{
+
+    width:180px;
+
+    padding:8px 12px;
+
+    border-radius:20px;
+
+    border:2px solid #D4AF37;
+
+    background:#111;
+
+    color:white;
+
+}
+
+.header__search button{
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#D4AF37;
+
+    cursor:pointer;
+
+}
